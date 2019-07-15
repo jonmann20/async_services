@@ -1,8 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ZeroCater Frontend Engineering Screener Test</title>
-    <script type="text/javascript" src="app.js"></script>
-  </head>
-  <body></body>
+<head>
+	<title>ZeroCater Frontend Engineering Screener Test</title>
+	<style>
+		.hidden {
+			display: none;
+		}
+
+		body {
+			display: flex;
+		}
+
+		section {
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Loading Services</h1>
+		<ul id="services"></ul>
+		<p class="hidden">All services loaded!</p>
+	</section>
+	<section>
+		<h2>Ranked Services</h2>
+		<ul id="services-ranked"></ul>
+	</section>
+
+	<script src="app.js"></script>
+</body>
 </html>
